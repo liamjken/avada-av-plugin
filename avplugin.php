@@ -33,6 +33,8 @@ function plugin_scripts() {
     include( plugin_dir_path( __FILE__ ) . 'includes/listings-ecom-button.php');     
     include( plugin_dir_path( __FILE__ ) . 'includes/attributes-display.php');
     include( plugin_dir_path( __FILE__ ) . 'includes/gallery-vsa-embed.php');
+ include( plugin_dir_path( __FILE__ ) . 'includes/aim-admin.php');
+ include( plugin_dir_path( __FILE__ ) . 'includes/slack.php');
 
     
     
