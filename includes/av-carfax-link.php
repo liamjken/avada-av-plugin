@@ -1,7 +1,7 @@
 <?php 
 
 function av_carfax_button_function() {
-    $car_fax_link = get_post_meta(get_the_ID(), 'car_fax_link', true);
+    $car_fax_link = get_post_meta(get_the_ID(), 'carfax_link', true);
 	ob_start();
 	?> 
 
