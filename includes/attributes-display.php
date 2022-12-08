@@ -117,15 +117,17 @@ function av_extcolor_function() {
 add_shortcode('av-extcolor', 'av_extcolor_function');  
 
 function AVgroupLink_function() {
-    $price = get_post_meta(get_the_ID(), '_regular_price', true);
+    $avprodurl = get_post_meta(get_the_ID(), '_product_url', true);
     if ( is_admin()) return '';
     global $product;
     
 	ob_start();
 	?> 
-    <?php echo esc_attr($price); ?> <?php
+    <?php echo esc_attr($avprodurl); ?> <?php
 	return ob_get_clean();
     
 }
 
 add_shortcode('AVgroupLink', 'AVgroupLink_function');  
+
+
