@@ -122,7 +122,7 @@ function AVgroupLink_function() {
     
 	ob_start();
 	?> 
-    <?php echo $product->get_the_ID( '_product_url' ); ?> <?php
+    <?php echo $product->get_attribute( '_product_url' ); ?> <?php
 	return ob_get_clean();
     
 }
