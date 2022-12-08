@@ -56,13 +56,3 @@ function aimDealerID_function() {
 }
 
 add_shortcode('aimDealerID', 'aimDealerID_function');
-
-
- //Grabs AIM dealer ID name plugin settings admin form
- function AVgroupLink_function() {
-    $content= esc_attr( get_option('dealer_brand') );
-       
-       return $content;
-   }
-   
-   add_shortcode('AVgroupLink', 'AVgroupLink_function');

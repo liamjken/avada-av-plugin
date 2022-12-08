@@ -115,3 +115,16 @@ function av_extcolor_function() {
 }
 
 add_shortcode('av-extcolor', 'av_extcolor_function');  
+
+function AVgroupLink_function() {
+    if ( is_admin()) return '';
+    global $product;
+    
+	ob_start();
+	?> 
+    <?php echo $product->get_attribute( '_product_url' ); ?> <?php
+	return ob_get_clean();
+    
+}
+
+add_shortcode('AVgroupLink', 'AVgroupLink_function');  
